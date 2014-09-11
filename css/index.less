@@ -1,0 +1,287 @@
+@color:#3dc0f1;
+html{
+	background: @color;
+	font-family: "微软雅黑";
+}
+.bai{
+	color: #fff;
+}
+*{
+	padding:0;
+	margin:0;
+	body{
+		padding:0;
+	}
+	::-webkit-scrollbar { width: 4px;}
+	::-webkit-scrollbar-track { background: rgba(0,0,0,0);}
+	::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.5); border-radius: 2px;margin-right:2px;}
+	::-webkit-scrollbar-thumb:window-inactive { }
+	.list{
+		position: absolute;
+		width: 300px;
+		top:80px;
+		left:100px;
+		height: 500px;
+		border-radius: 3px;
+		background: rgba(225,225,225,0.5);
+		display: none;
+	}
+	.name{
+		position: absolute;
+		text-align: center;
+		color:#000;
+		top:0px;
+		left: 10px;
+		cursor: pointer;
+	}
+	.name_win{
+		position: absolute;
+		text-align: center;
+		color:#000;
+		top:0px;
+		left: 100px;
+		cursor: pointer;
+	}
+	.search{
+		position: absolute;
+		width:96.5%;
+		background:#fff;
+		top:80px;
+		height:30px;
+		line-height: 30px;
+		padding-left: 10px;
+		border:0px;
+	}
+	.img-selected{
+		position: absolute;
+		width:50px;
+		height: 47px;
+		right:20px;
+		top:15px;
+		cursor: pointer;
+	}
+	.listname{
+		position: absolute;
+		top:110px;
+		width:100%;
+		height:390px;
+		overflow: auto;
+		border-radius:0px 0px 3px 3px;
+	}
+	.list-ul{
+		position: absolute;
+		list-style: none;
+		width:95.5%;
+		margin:0;
+	}
+	.list-li{
+		font-size: 15px;
+		line-height: 15px;
+		font-weight: 300;
+		margin-left:10px;
+		cursor: pointer;
+		padding:5px 0px;
+		height:30px;
+		width:100%;
+	}
+	.list-li:hover{
+		color:#fff;
+	}
+	.class{
+		position: absolute;
+	}
+	.photo{
+		height:20px;
+		width:20px;
+		position: relative;
+		top:-2px;
+		left:1px;
+	}
+	.win{
+		position: absolute;
+		height: 450px;
+		width:600px;
+		background: rgba(225,225,225,0.5);
+		top:100px;
+		left:500px;
+		border-radius: 5px;
+		.contest{
+				position: absolute;
+				width:100%;
+				height:50%;
+				background: #fff;
+				bottom: 1px solid #aaa;
+				overflow: auto;
+				word-break: normal;
+				word-wrap: break-word;
+			}
+		.biao{
+				width: 100%;
+				position: relative;
+				height: 7%;
+				top:225px;
+				#color{
+					position: absolute;
+					height: 90%;
+					width:30px;
+					background: #000;
+					top: 3px;
+					left:5px;
+					border-radius: 3px;
+					cursor: pointer;
+				}
+				.biaoqing{
+					width:30px;
+					height:90%;
+					position: absolute;
+					top:3px;
+					left:40px;
+					background-image: url(../img/biaoqing.png);
+					background-position: 85px 50px;
+				}
+				.biaoqing:hover{
+					background-position: 85px 25px; 
+					cursor: pointer;
+				}
+			}
+		.text{
+			width:100%;
+			height:20%;
+			position: absolute;
+			bottom:0;
+			background: #fff;
+			border-radius:0px 0px 3px 3px;
+			.area{
+				resize:none;
+				width:80%;
+				height:90%;
+				border-radius: 0px 0px 0px 3px;
+				border:0;
+			}
+			.submit{
+				width: 19%;
+				height: 100%;
+				border-radius: 0px 0px 3px 0px;
+				border:0;
+				background: #39f;
+				position: absolute;
+				right:0;
+				top:0;
+				color: #aaa;
+				font-size: 30px;
+				line-height: 90px;
+				text-align: center;
+				font-family: "微软雅黑";
+				cursor: pointer;
+			}
+		}
+	}
+	.bottom{
+		position: absolute;
+		bottom:0;
+		width:100%;
+		height: 30px;
+		background: #fff;
+		border-radius:0px 0px 3px 3px;
+		text-align: center;
+		p{
+			font-size: 30px;
+			line-height: 30px;
+			font-weight: 600;
+			cursor: pointer;
+		}
+	}
+	.left{
+		position: absolute;
+		width: 50px;
+		height: 47px;
+		top:10px;
+		left:20px;
+		cursor: pointer;
+	}
+	.header{
+		border-bottom: 1px solid #aaa;
+		height: 100px;
+		width:100%;
+	}
+	.meun{
+		width:100px;
+		height:30px;
+		position: absolute;
+		right:0;
+		top:0;
+		font-weight: 700;
+		.little{
+			text-align: center;
+			cursor:pointer;
+			position: absolute;
+			width:30px;
+			height:30px;
+			left:0;
+		}
+		.little:hover{
+			.bai;
+		}
+		.big{
+			text-align: center;
+			cursor:pointer;
+			position: absolute;
+			width:30px;
+			height:30px;
+			left:35px;
+		}
+		.big:hover{
+			.bai;
+		}
+		.no{
+			text-align: center;
+			cursor:pointer;
+			position: absolute;
+			width:30px;
+			height:30px;
+			right:0;
+		}
+		.no:hover{
+			.bai;
+		}
+	}
+	#picker{
+		position: absolute;
+		z-index:3;
+		background: rgba(225,225,225,0.5);
+		top:100px;
+		left:100px;
+		border-radius: 5px;
+		display: none;
+	}
+	#biaoqing{
+		display: none;
+		width:250px;
+		height:300px;
+		z-index:3;
+		background: rgba(0,0,0,0.5);
+		position: absolute;
+		left: 100px;
+		top:100px;
+		border-radius: 5px;
+		overflow: auto;
+		.img{
+			margin:3px;
+		}
+		.img:hover{
+			border:1px solid #00f;
+		}
+	}
+	li{
+		list-style: none;
+		line-height: 25px;
+		font-size: 20px;
+		padding-left: 20px;
+		color: rgba(0,0,0,0.5);
+		.jilu{
+			font-size: 10px;
+			padding-left: 25px;
+			color: rgba(0,0,0,0.5);
+		}
+	}
+}
