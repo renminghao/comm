@@ -111,15 +111,15 @@ var index = {
 			submit.bind("click",function(){
 				var co = submit.css("color");
 				if(co == 'rgb(0, 0, 0)'){
-					var s = $('.area').val();
-					var d = new Date();
-					var vYear = d.getFullYear()+"/";
-					var vMon = d.getMonth() + 1+"/";
-					var vDay = d.getDate()+"/  ";
-					var h = d.getHours()+":"; 
-					var m = d.getMinutes()+":"; 
-					var se = d.getSeconds(); 
-					var time = vYear+vMon+vDay+h+m+se;
+					var s = $('.area').val(),
+					d = new Date(),
+					vYear = d.getFullYear()+"/",
+					vMon = d.getMonth() + 1+"/",
+					vDay = d.getDate()+"/  ",
+					h = d.getHours()+":", 
+					m = d.getMinutes()+":", 
+					se = d.getSeconds(), 
+					time = vYear+vMon+vDay+h+m+se;
 					$.ajax({
 						type 		: "POST",
 						url       	: "insertInfor.php",
@@ -162,21 +162,21 @@ var index = {
 				pop.draggable();
 			});
 			s.bind("click",function (){
-				var s = $(this).parent().parent();
-				s.animate({width:"300",height:"100"},500);
-				$(".contest").fadeOut(100);
-				$(".submit").fadeOut(100);
-				$(".text").fadeOut(100);
-				$("#color").fadeOut(100);
+				var s = $(this).parent().parent(),
+				s.animate({width:"300",height:"100"},500),
+				$(".contest").fadeOut(100),
+				$(".submit").fadeOut(100),
+				$(".text").fadeOut(100),
+				$("#color").fadeOut(100),
 				$('.clear').fadeOut(100);
 			});
 			l.bind("click",function (){
-				var s = $(this).parent().parent();
-				s.animate({width:"600",height:"450"},500);
-				$(".contest").fadeIn(100);
-				$(".submit").fadeIn(100);
-				$(".text").fadeIn(100);
-				$("#color").fadeIn(100);
+				var s = $(this).parent().parent(),
+				s.animate({width:"600",height:"450"},500),
+				$(".contest").fadeIn(100),
+				$(".submit").fadeIn(100),
+				$(".text").fadeIn(100),
+				$("#color").fadeIn(100),
 				$('.clear').fadeIn(100);
 			});
 			mm.bind("click",function (){
